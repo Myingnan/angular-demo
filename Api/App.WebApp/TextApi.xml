@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App.WebApp</name>
+    </assembly>
+    <members>
+        <member name="M:App.WebApp.Startup.ApiVersionExtension.AddApiVersion(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            添加 API 版本控制扩展方法
+            </summary>
+            <param name="services">生命周期中注入的服务集合 <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+        </member>
+        <member name="M:App.WebApp.Startup.AuthConfiguer.Configuer(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            配置Auth服务
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:App.WebApp.Startup.AuthConfiguer.GetJWT(App.Core.Data.System_UserInfo,App.WebApp.Startup.JwtSettings)">
+            <summary>
+            生成JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="F:App.WebApp.Startup.AutofacContainer.Instance">
+            <summary>
+            容器实例
+            </summary>
+        </member>
+        <member name="M:App.WebApp.Startup.AutofacContainer.Init(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Func{Autofac.ContainerBuilder,Autofac.ContainerBuilder})">
+            <summary>
+            初始化容器
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <param name="func"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.WebApp.Startup.AutofacContainer.MyBuild(Autofac.ContainerBuilder,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            自定义注册
+            </summary>
+            <param name="configuration"></param>
+            <param name="builder"></param>
+        </member>
+        <member name="P:App.WebApp.Startup.JwtSettings.Issuer">
+            <summary>
+            token是谁颁发的
+            </summary>
+        </member>
+        <member name="P:App.WebApp.Startup.JwtSettings.Audience">
+            <summary>
+            token可以给哪些客户使用
+            </summary>
+        </member>
+        <member name="P:App.WebApp.Startup.JwtSettings.SecretKey">
+            <summary>
+            加密的Key
+            </summary>
+        </member>
+        <member name="T:Appapp.Controllers.ValuesController">
+            <summary>
+            测试接口
+            </summary>
+        </member>
+        <member name="M:Appapp.Controllers.ValuesController.Get">
+            <summary>
+            得到当前用户的总数
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
