@@ -1,0 +1,55 @@
+.title {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.background {
+    --background: rgb(104, 42, 163);
+}
+
+.label {
+    --color: white;
+}
+.button {
+    --background: rgba(0, 0, 0, 0); 
+    --background-activated: rgba(0, 0, 0, 0); 
+    width: 40%;
+}
+
+.icon {
+   margin-left: -90%;
+   color: rgb(142, 142, 233);
+}
+
+.boder {
+    --border-color: rgb(142, 142, 233);
+}
+
+.search-icon {
+    color: rgb(142, 142, 233);
+}
+
+.row {
+    margin-top: -10%;
+}
+
+.input1 {
+    border: 1px;
+    border-color:  rgb(142, 142, 233);
+}
+
+.send-button {
+    --background: rgba(47, 47, 194, 0.596);
+    --border-width: 2px;
+    --border-color:  rgba(7, 7, 39, 0.596);
+    height: 95%;
+    width: 20%;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
