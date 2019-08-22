@@ -3,7 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\login"
+    "\\src\\app\\tab1"
   ],
+  "SelectedNode": "\\src\\app\\tab1\\tab1.page.html",
   "PreviewInSolutionExplorer": false
 }
