@@ -5,10 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },  { path: 'talk', loadChildren: './talk/talk.module#TalkPageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' }
-
-  },  { path: 'capture', loadChildren: './capture/capture.module#CapturePageModule' }
+  },
+  { path: 'talk', loadChildren: './talk/talk.module#TalkPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'capture', loadChildren: './capture/capture.module#CapturePageModule' }
 
 ];
 @NgModule({
