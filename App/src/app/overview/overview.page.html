@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Magic Mirror AI Fitness Status
+    </ion-title>
+    <ion-icon class="icon-refresh" name="refresh"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item lines="full">
+  <a [routerLink]="[ '/overview' ]">Makeatbon Team: Evil Queen</a>
+  <ion-icon class="icon-funnel" name="funnel"></ion-icon>
+  <ion-note class="icon-note">FILTER</ion-note>
+  <ion-icon class="icon-arrow-round-up" name="arrow-round-up"></ion-icon>
+  <ion-note class="icon-note">DATE</ion-note>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-col size="6">
+    <ion-button [routerLink]="[ '/capture' ]" size="default">Take Picture Form Mirror</ion-button>
+  </ion-col>
+  <ion-col size="6">
+    <ion-button [routerLink]="[ '/talk' ]" size="default">Talk to Mirror</ion-button>
+  </ion-col>
+</ion-item>
+
+<ion-item lines="none" class="text-item">
+  <ion-col size="4">
+    <ion-note class="text-note">Top Participant</ion-note>
+  </ion-col>
+  <ion-col size="3">
+    <ion-note class="text-note-second">Wei Guo</ion-note>
+  </ion-col>
+  <ion-col size="3">
+    <ion-note class="text-note">Top Tag</ion-note>
+  </ion-col>
+  <ion-col size="3">
+    <ion-note class="text-note">Include</ion-note>
+  </ion-col>
+</ion-item>
+
+<ion-content>
+  <ion-list *ngFor="let overview of overviewData">
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+            <ion-button class="button-number">{{overview.number}}</ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-note>{{overview.title}}</ion-note>
+          </ion-col>
+          <ion-col size="5">
+            <ion-img src="{{overview.pic}}"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>
