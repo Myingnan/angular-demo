@@ -1,10 +1,5 @@
-.title {
-    background-color: lightseagreen;
-    color: white;
-}
-
 .background {
-    --background: rgb(104, 42, 163);
+    --background: #fd687d;
 }
 
 .label {
@@ -18,7 +13,7 @@
 
 .icon {
    margin-left: -90%;
-   color: rgb(142, 142, 233);
+   color: white;
 }
 
 .boder {
@@ -26,7 +21,7 @@
 }
 
 .search-icon {
-    color: rgb(142, 142, 233);
+    color: #fd687d;
 }
 
 .row {
@@ -39,9 +34,7 @@
 }
 
 .send-button {
-    --background: rgba(47, 47, 194, 0.596);
-    --border-width: 2px;
-    --border-color:  rgba(7, 7, 39, 0.596);
+    --background: #fd687d;
     height: 95%;
     width: 20%;
 }
