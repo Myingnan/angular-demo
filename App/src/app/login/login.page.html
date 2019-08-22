@@ -11,11 +11,15 @@
     </ion-item>
   </div>
   <ion-item class="margin1">
-    <ion-input type="text" placeholder="Your email"></ion-input>
+    <ion-input type="text" placeholder="Your email" [(ngModel)]="email" required></ion-input>
   </ion-item>
   <ion-item class="margin2">
-    <ion-input type="text" placeholder="Password"></ion-input>
-    <ion-icon name="eye" class="icon-color"></ion-icon>
+    <ion-input type="{{pwdshow?'text':'password'}}" placeholder="Password" [(ngModel)]="password"></ion-input>
+    <a href="javascript:;" rel="external nofollow" item-end (click)="pwdshow=!pwdshow"
+      [ngClass]="pwdshow?'eyeshow':'eyehide'">
+      <ion-icon name="ios-eye-off" class="eye-hide" size="large"></ion-icon>
+      <ion-icon name="ios-eye" class="eye-show" size="large"></ion-icon>
+    </a>
   </ion-item>
   <ion-item lines="none" class="margin3">
     <ion-button class="login-button">Login
@@ -23,9 +27,9 @@
     </ion-button>
   </ion-item>
   <div class="loginLink">
-  <p class="white-color">Don't have an account?<a [routerLink]="[ '/login' ]">Sign
-      In</a>
-  </p>
-</div>
+    <p class="white-color">Don't have an account?<a [routerLink]="[ '/login' ]">Sign
+        In</a>
+    </p>
+  </div>
 
 </ion-content>
