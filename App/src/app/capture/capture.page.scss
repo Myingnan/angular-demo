@@ -1,22 +1,31 @@
 .back{
     margin-top: -6%;
+    color:black;
 }
-.card{
-    background-color:  #f4f5f8;
+ion-card{
+    --background:#f4f5f8;
     height: 20%;
-    color: #000;
 }
 .name{
     font-weight: bold;
     margin-left: 10%;
     font-size: 20px;
+    color: #000;
 }
-
-.picture{
+.img-photo{
     width: 80%;
     height: 100%;
     margin-left: 45%;
     margin-top: -6%;
+}
+.note-racket{
+    --color: black;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.previewpic{
+    width: 50%;
+    height: 50%;
 }
 .loop{
     height: 20%;
@@ -26,6 +35,7 @@
     height: 50px;
     margin-bottom: -30%;
     --border-radius:15px;
+    --background:#fd687d;
 }
 .buttons{
     width: 120px;
@@ -41,11 +51,6 @@
     width: 50%;
     height: 80%;
 }
-.racket{
-    color: black;
-    margin-left: 5%;
-    font-weight: bold;
-}
 .input{
     color: #000;
     margin-left: 5%;
@@ -54,10 +59,6 @@
 .detail{
     width: 90%;
     height: 70%;
-}
-.pic{
-    width: 50%;
-    height: 50%;
 }
 .detailnote{
     color: black;

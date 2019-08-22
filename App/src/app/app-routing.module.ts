@@ -8,8 +8,8 @@ const routes: Routes = [
   },
   { path: 'talk', loadChildren: './talk/talk.module#TalkPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'capture', loadChildren: './capture/capture.module#CapturePageModule' }
-
+  { path: 'capture', loadChildren: './capture/capture.module#CapturePageModule' },
+  { path: 'overview', loadChildren: './overview/overview.module#OverviewPageModule' }
 ];
 @NgModule({
   imports: [

@@ -1,0 +1,48 @@
+ion-toolbar{
+    --background: #f4f5f8;
+}
+ion-title{
+    font-size: 17px;
+}
+.icon-refresh{
+    color:#fd687d;
+    float: right;
+    margin-right: 3%;
+    font-size: 20px;
+}
+.icon-note{
+    --color:#fd687d;
+    font-size: 14px;
+}
+.icon-funnel{
+    color:#fd687d;
+    font-size: 18px;
+    margin-left: 10%;
+}
+.icon-arrow-round-up{
+    font-size: 25px;
+    color:#fd687d;
+    font-weight: bold;
+}
+ion-button{
+    --background: #fd687d;
+    --background-activated:#8d93ab;
+    --border-radius: 15px;
+    width: 185px;
+}
+.text-item{
+    --background:#f4f5f8;
+    font-size: 15px;
+}
+.text-note{
+      --color:black;
+}
+.text-note-second{
+    --color:#fd687d;
+}
+.button-number{
+    --background:#8d93ab;
+    --border-radius:80px;
+    width: 27px;
+    margin-left: -45%;
+}
