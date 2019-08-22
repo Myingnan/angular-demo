@@ -33,9 +33,9 @@
     width: 70%;
     height: 100%;
     text-align: left;
-    --background: #f4f5f8;
+    --background: #fd687d;
     --background-activated: #f4f5f8;
-    color: #8d93ab;
+    color: white;
 }
 
 .icon {
@@ -48,6 +48,12 @@
     color: #8d93ab;
 }
 
-.icon-color {
+.eyehide .eye-hide, .eyeshow .eye-show{
+    display: block;//让对象成为块级元素
     color: #e3e3eb;
-}
+  }
+   
+  .eyehide .eye-show, .eyeshow .eye-hide{
+    display: none;//此元素不会被显示
+    color: #e3e3eb;
+  }   
