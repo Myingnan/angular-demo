@@ -1,39 +1,64 @@
-<ion-content>
-  <ion-list>
-    <ion-item class="background">
-      <ion-button class="button" [routerLink]="[ '/tabs/tab1' ]">
-        <ion-icon name="arrow-dropleft" size="large" class="icon"></ion-icon>
-      </ion-button>
-      <ion-label class="label">[Magic Mirror Bot]</ion-label>
-    </ion-item>
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="canGoBack()" class="back-button">
+      <ion-icon name="arrow-dropleft" size="large"></ion-icon>
+    </ion-button>
+    <ion-title>[Magic Mirror Bot]</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-    <ion-item class="boder">
-      <ion-icon name="search" class="search-icon"></ion-icon>
-      <ion-label>Search</ion-label>
-    </ion-item>
-  </ion-list>
-  <ion-list *ngFor="let a of displayData">
-    <ion-item lines="none">
-      <ion-row>
-        <ion-col col-30>
-          <img src={{a.picUrl}} />
-        </ion-col>
-        <ion-col col-70>
-          <label>{{a.date}}</label>
-        </ion-col>
-        <ion-col col-10>
-          <label>{{a.name}}</label>
-        </ion-col>
-      </ion-row>
-    </ion-item>
-    <ion-item>
-      <ion-label>{{a.content}}</ion-label>
+<ion-content>
+  <ion-item class="boder-type">
+    <ion-searchbar></ion-searchbar>
+  </ion-item>
+  <ion-list lines="full">
+    <ion-item *ngFor="let talk of talks;">
+      <ng-container *ngIf="talk.id==1">
+        <ion-avatar slot="end">
+          <img [src]="talk.picUrl">
+        </ion-avatar>
+        <ion-grid>
+          <ion-row class="row-margin-right">
+            <ion-col>
+              <p>{{talk.name}}</p>
+            </ion-col>
+            <ion-col>
+              <p>{{talk.date}}</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="margin-right">
+              <p>{{talk.content}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ng-container>
+      <ng-container *ngIf="talk.id==2">
+        <ion-avatar>
+          <img [src]="talk.picUrl">
+        </ion-avatar>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="col-margin-left">
+              <p>{{talk.date}}</p>
+            </ion-col>
+            <ion-col>
+              <p>{{talk.name}}</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="font-color">
+              <p>{{talk.content}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ng-container>
     </ion-item>
   </ion-list>
 </ion-content>
 <div>
-  <ion-item>
-    <ion-input type="text" placeholder="input your question"></ion-input>
+  <ion-item lines="none" class="margin-bottom">
+    <input type="text" class="input" placeholder="input your question">
     <ion-button class="send-button">Send</ion-button>
   </ion-item>
 </div>
