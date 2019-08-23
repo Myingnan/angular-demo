@@ -1,13 +1,13 @@
 <ion-content padding>
 
-  <div class="login">
-    <ion-icon name="log-in" class="login-icon"></ion-icon>
+  <div class="sign">
+    <ion-icon name="contact" class="sign-icon"></ion-icon>
     <ion-item lines="none">
-      <ion-label class="welcome-label">Welcome back,</ion-label>
+      <ion-label class="welcome-label">You, welcome</ion-label>
     </ion-item>
 
     <ion-item lines="none">
-      <ion-label class="welcome-label">login to discovery</ion-label>
+      <ion-label class="welcome-label">Sign in to discovery</ion-label>
     </ion-item>
   </div>
   <ion-item class="item-margin1">
@@ -21,14 +21,21 @@
       <ion-icon name="ios-eye" class="eye-show"></ion-icon>
     </a>
   </ion-item>
+  <ion-item class="item-margin2">
+    <ion-input type="{{pwdshow?'text':'password'}}" placeholder="Confirm Password" [(ngModel)]="repassword"></ion-input>
+    <a href="javascript:;" rel="external nofollow" item-end (click)="pwdshow=!pwdshow"
+      [ngClass]="pwdshow?'eyeshow':'eyehide'">
+      <ion-icon name="ios-eye-off" class="eye-hide"></ion-icon>
+      <ion-icon name="ios-eye" class="eye-show"></ion-icon>
+    </a>
+  </ion-item>
   <ion-item lines="none" class="item-margin3">
-    <ion-button class="login-button" [routerLink]="[ '/overview' ]">Login
+    <ion-button class="sign-button" [routerLink]="[ '/login' ]">Sign up
       <ion-icon name="arrow-round-forward" size="large" class="icon"></ion-icon>
     </ion-button>
   </ion-item>
-  <div class="signLink">
-    <p class="white-color">Don't have an account?<a [routerLink]="[ '/sign-up' ]">Sign
-        In</a>
+  <div class="loginLink">
+    <p class="white-color">Have an account?<a [routerLink]="[ '/login' ]">Login in</a>
     </p>
   </div>
 

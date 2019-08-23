@@ -8,6 +8,7 @@ const routes: Routes = [
   },
   { path: 'talk', loadChildren: './talk/talk.module#TalkPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'sign-up', loadChildren: './sign-up/sign-up.module#SignUpPageModule' },
   { path: 'capture', loadChildren: './capture/capture.module#CapturePageModule' },
   { path: 'overview', loadChildren: './overview/overview.module#OverviewPageModule' }
 ];
