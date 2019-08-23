@@ -1,16 +1,12 @@
-.back{
-    margin-top: -6%;
-    color:black;
-}
 ion-card{
     --background:#f4f5f8;
     height: 20%;
 }
-.name{
+.label-name{
+    --color: #000;
     font-weight: bold;
     margin-left: 10%;
     font-size: 20px;
-    color: #000;
 }
 .img-photo{
     width: 80%;
@@ -18,49 +14,45 @@ ion-card{
     margin-left: 45%;
     margin-top: -6%;
 }
-.note-racket{
+ion-note{
     --color: black;
     margin-left: 5%;
     font-weight: bold;
 }
-.previewpic{
+.note-detail{
+    --color: black;
+    width: 70%;
+    font-weight: normal;
+    margin-left: 1%;
+}
+.preview-pic{
     width: 50%;
     height: 50%;
 }
-.loop{
-    height: 20%;
+.detail-pic{
+    width: 90%;
+    height: 70%;
 }
-.button{
+ion-button{
     width: 120px;
     height: 50px;
     margin-bottom: -30%;
     --border-radius:15px;
     --background:#fd687d;
 }
-.buttons{
+.button-grey{
     width: 120px;
     height: 30px;
     margin-bottom: -1%;
     --border-radius:20px;
+    --background:#8d93ab;
 }
-.front{
+.label-front{
     font-size: 15px;
     margin-left: 3%;
 }
-.toggle{
+ion-toggle{
     width: 50%;
     height: 80%;
-}
-.input{
-    color: #000;
-    margin-left: 5%;
-    font-weight: bold;
-}
-.detail{
-    width: 90%;
-    height: 70%;
-}
-.detailnote{
-    color: black;
-    width: 70%;
+    --background-checked:#fd687d;
 }
