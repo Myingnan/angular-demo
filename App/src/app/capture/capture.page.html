@@ -1,37 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <!--<ion-button class="back" [routerLink]="[ '/tabs/tab1' ]">
-      <ion-icon name="arrow-round-back" size="large" class="icon"></ion-icon>
-    </ion-button>-->
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
     <ion-title>Magic Mirror Capture</ion-title>
+    <ion-icon name="arrow-round-back" size="large" [routerLink]="[ '/overview' ]"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-card>
-  <ion-label class="name">Laven Creative</ion-label>
+  <ion-label class="label-name">Laven Creative</ion-label>
   <ion-img class="img-photo" src="/assets/girl.PNG"></ion-img>
 </ion-card>
 
 <ion-content>
-  <ion-note class="note-racket">Tennis Racket</ion-note>
-  <ion-slides [options]="slideOpts" (ionSlideTouchEnd)="restartSlide()">
-    <ion-slide *ngFor="let p of displayData">
-      <img class="previewpic" src={{p.picUrl}} />
+  <ion-note>Tennis Racket</ion-note>
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let pic of previewData">
+      <img class="preview-pic" src={{pic.picUrl}} />
     </ion-slide>
   </ion-slides>
 
-  <ion-label class="input">Input</ion-label>
+  <ion-note>Input</ion-note>
   <ion-searchbar></ion-searchbar>
   <ion-item lines="none">
-    <ion-note class="detailnote">Worksite needs help prevent unsafe situations that lead to injuries and equipment
-      damage.
+    <ion-note class="note-detail">Worksite needs help prevent unsafe situations that lead to injuries and
+      equipmentdamage.
     </ion-note>
   </ion-item>
   <ion-item lines="none">
-    <ion-img class="detail" src="/assets/racket4.PNG"></ion-img>
+    <ion-img class="detail-pic" src="/assets/racket4.PNG"></ion-img>
   </ion-item>
 
 
@@ -39,17 +34,17 @@
     <ion-grid>
       <ion-row>
         <ion-col size="4">
-          <ion-button class="button">Clear</ion-button>
+          <ion-button>Clear</ion-button>
         </ion-col>
         <ion-col size="4">
-          <ion-button class="buttons" color="medium">Switch Camera</ion-button>
+          <ion-button class="button-grey">Switch Camera</ion-button>
           <ion-item lines="none">
-            <ion-toggle name="cherry" color="danger" class="toggle"></ion-toggle>
-            <ion-label class="front">Front</ion-label>
+            <ion-toggle></ion-toggle>
+            <ion-label class="label-front">Front</ion-label>
           </ion-item>
         </ion-col>
         <ion-col size="4">
-          <ion-button class="button">sumbit</ion-button>
+          <ion-button>sumbit</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>

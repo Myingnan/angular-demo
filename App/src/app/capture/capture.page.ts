@@ -15,7 +15,7 @@ export class CapturePage implements OnInit {
     slidesPerView: 1.6,
   };
 
-  displayData = [
+  previewData = [
     {
       picUrl: '/assets/racket1.PNG',
     },
