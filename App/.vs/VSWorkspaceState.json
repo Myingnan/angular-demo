@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\capture"
+    "\\src\\app\\capture",
+    "\\src\\app\\overview"
   ],
-  "SelectedNode": "\\src\\app\\app-routing.module.ts",
+  "SelectedNode": "\\src\\app\\overview\\overview.page.ts",
   "PreviewInSolutionExplorer": false
 }

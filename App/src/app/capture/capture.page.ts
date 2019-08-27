@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-capture',
@@ -15,22 +16,12 @@ export class CapturePage implements OnInit {
     slidesPerView: 1.6,
   };
 
-  previewData = [
-    {
-      picUrl: '/assets/racket1.PNG',
-    },
-    {
-      picUrl: '/assets/racket2.PNG',
-    },
-    {
-      picUrl: '/assets/racket3.PNG',
-    },
-    {
-      picUrl: '/assets/racket4.PNG',
-    },
-  ];
-  constructor() { }
+  previewData: [];
+  service:AppService ;
 
   ngOnInit() {
+    this.previewData = this.service.getCapture();
   }
+
+  constructor() { }
 }
