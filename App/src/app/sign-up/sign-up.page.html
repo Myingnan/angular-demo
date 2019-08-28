@@ -1,42 +1,43 @@
 <ion-content padding>
+  <div class="content-left-margin">
+    <div class="sign">
+      <ion-icon name="contact" class="sign-icon"></ion-icon>
+      <ion-item lines="none">
+        <ion-label class="welcome-label">You, welcome</ion-label>
+      </ion-item>
 
-  <div class="sign">
-    <ion-icon name="contact" class="sign-icon"></ion-icon>
-    <ion-item lines="none">
-      <ion-label class="welcome-label">You, welcome</ion-label>
+      <ion-item lines="none">
+        <ion-label class="welcome-label">Sign in to discovery</ion-label>
+      </ion-item>
+    </div>
+    <ion-item class="item-margin1">
+      <ion-input type="text" placeholder="Your email" [(ngModel)]="email" required></ion-input>
     </ion-item>
-
-    <ion-item lines="none">
-      <ion-label class="welcome-label">Sign in to discovery</ion-label>
+    <ion-item class="item-margin2">
+      <ion-input type="{{pwdshow?'text':'password'}}" placeholder="Password" [(ngModel)]="password"></ion-input>
+      <a href="javascript:;" rel="external nofollow" item-end (click)="pwdshow=!pwdshow"
+        [ngClass]="pwdshow?'eyeshow':'eyehide'">
+        <ion-icon name="ios-eye-off" class="eye-hide"></ion-icon>
+        <ion-icon name="ios-eye" class="eye-show"></ion-icon>
+      </a>
     </ion-item>
+    <ion-item class="item-margin2">
+      <ion-input type="{{pwdshow?'text':'password'}}" placeholder="Confirm Password" [(ngModel)]="repassword">
+      </ion-input>
+      <a href="javascript:;" rel="external nofollow" item-end (click)="pwdshow=!pwdshow"
+        [ngClass]="pwdshow?'eyeshow':'eyehide'">
+        <ion-icon name="ios-eye-off" class="eye-hide"></ion-icon>
+        <ion-icon name="ios-eye" class="eye-show"></ion-icon>
+      </a>
+    </ion-item>
+    <ion-item lines="none" class="item-margin3">
+      <ion-button class="sign-button" [routerLink]="[ '/login' ]">Sign up
+        <ion-icon name="arrow-round-forward" size="large" class="icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <div class="loginLink">
+      <p class="white-color">Have an account?<a [routerLink]="[ '/login' ]">Login in</a>
+      </p>
+    </div>
   </div>
-  <ion-item class="item-margin1">
-    <ion-input type="text" placeholder="Your email" [(ngModel)]="email" required></ion-input>
-  </ion-item>
-  <ion-item class="item-margin2">
-    <ion-input type="{{pwdshow?'text':'password'}}" placeholder="Password" [(ngModel)]="password"></ion-input>
-    <a href="javascript:;" rel="external nofollow" item-end (click)="pwdshow=!pwdshow"
-      [ngClass]="pwdshow?'eyeshow':'eyehide'">
-      <ion-icon name="ios-eye-off" class="eye-hide"></ion-icon>
-      <ion-icon name="ios-eye" class="eye-show"></ion-icon>
-    </a>
-  </ion-item>
-  <ion-item class="item-margin2">
-    <ion-input type="{{pwdshow?'text':'password'}}" placeholder="Confirm Password" [(ngModel)]="repassword"></ion-input>
-    <a href="javascript:;" rel="external nofollow" item-end (click)="pwdshow=!pwdshow"
-      [ngClass]="pwdshow?'eyeshow':'eyehide'">
-      <ion-icon name="ios-eye-off" class="eye-hide"></ion-icon>
-      <ion-icon name="ios-eye" class="eye-show"></ion-icon>
-    </a>
-  </ion-item>
-  <ion-item lines="none" class="item-margin3">
-    <ion-button class="sign-button" [routerLink]="[ '/login' ]">Sign up
-      <ion-icon name="arrow-round-forward" size="large" class="icon"></ion-icon>
-    </ion-button>
-  </ion-item>
-  <div class="loginLink">
-    <p class="white-color">Have an account?<a [routerLink]="[ '/login' ]">Login in</a>
-    </p>
-  </div>
-
 </ion-content>
