@@ -15,39 +15,27 @@
   <ion-note class="icon-note">DATE</ion-note>
 </ion-item>
 
-<ion-item lines="none">
-  <ion-col size="6">
-    <ion-button [routerLink]="[ '/capture' ]" size="default">Take Picture Form Mirror</ion-button>
-  </ion-col>
-  <ion-col size="6">
-    <ion-button [routerLink]="[ '/talk' ]" size="default">Talk to Mirror</ion-button>
-  </ion-col>
+<ion-item class="item-button" lines="none">
+  <ion-button [routerLink]="[ '/capture' ]" size="default">Take Picture Form Mirror</ion-button>
+  <ion-button [routerLink]="[ '/talk' ]" size="default">Talk to Mirror</ion-button>
 </ion-item>
 
 <ion-item lines="none" class="text-item">
-  <ion-col size="4">
-    <ion-note class="text-note">Top Participant</ion-note>
-  </ion-col>
-  <ion-col size="3">
-    <ion-note class="text-note-second">Wei Guo</ion-note>
-  </ion-col>
-  <ion-col size="3">
-    <ion-note class="text-note">Top Tag</ion-note>
-  </ion-col>
-  <ion-col size="3">
-    <ion-note class="text-note">Include</ion-note>
-  </ion-col>
+  <ion-note class="text-note">Top Participant</ion-note>
+  <ion-note class="text-note-second">Wei Guo</ion-note>
+  <ion-note class="text-note">Top Tag</ion-note>
+  <ion-note class="text-note">Include</ion-note>
 </ion-item>
 
 <ion-content>
-  <ion-list *ngFor="let overview of overviewData">
+  <ion-list *ngFor="let overview of overviewPageData">
     <ion-item lines="none">
       <ion-grid>
         <ion-row>
-          <ion-col size="1">
+          <ion-col size="2">
             <ion-button class="button-number">{{overview.number}}</ion-button>
           </ion-col>
-          <ion-col size="6">
+          <ion-col size="5">
             <ion-note>{{overview.title}}</ion-note>
           </ion-col>
           <ion-col size="5">

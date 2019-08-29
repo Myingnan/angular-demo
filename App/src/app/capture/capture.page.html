@@ -13,7 +13,7 @@
 <ion-content>
   <ion-note>Tennis Racket</ion-note>
   <ion-slides [options]="slideOpts">
-    <ion-slide *ngFor="let pic of previewData">
+    <ion-slide *ngFor="let pic of capturePageData">
       <img class="preview-pic" src={{pic.picUrl}} />
     </ion-slide>
   </ion-slides>
@@ -29,24 +29,15 @@
     <ion-img class="detail-pic" src="/assets/racket4.PNG"></ion-img>
   </ion-item>
 
-
-  <ion-item lines="none">
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <ion-button>Clear</ion-button>
-        </ion-col>
-        <ion-col size="4">
-          <ion-button class="button-grey">Switch Camera</ion-button>
-          <ion-item lines="none">
-            <ion-toggle></ion-toggle>
-            <ion-label class="label-front">Front</ion-label>
-          </ion-item>
-        </ion-col>
-        <ion-col size="4">
-          <ion-button>sumbit</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+  <ion-item lines="none" class="item-button">
+    <ion-button size="large">Clear</ion-button>
+    <ion-col>
+      <ion-button class="button-grey">Switch Camera</ion-button>
+      <ion-item lines="none">
+        <ion-toggle></ion-toggle>
+        <ion-label class="label-front">Front</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-button size="large">sumbit</ion-button>
   </ion-item>
 </ion-content>

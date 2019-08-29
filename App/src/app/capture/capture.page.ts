@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
 
 @Component({
@@ -16,13 +16,11 @@ export class CapturePage implements OnInit {
     slidesPerView: 1.6,
   };
 
-  previewData: any;
+  capturePageData: any;
 
   constructor(public service: AppService) { }
 
   ngOnInit() {
-    this.previewData = this.service.getCapture();
+    this.capturePageData = this.service.getCapturePageData();
   }
-
-
 }

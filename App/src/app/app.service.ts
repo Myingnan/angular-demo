@@ -7,7 +7,7 @@ export class AppService {
 
   constructor() { }
 
-  public overviewData = [
+  public overviewPageData = [
     {
       number: '1',
       pic: '/assets/Capture1.PNG',
@@ -40,7 +40,7 @@ export class AppService {
     },
   ];
 
-  public previewData = [
+  public capturePageData = [
     {
       picUrl: '/assets/racket1.PNG',
     },
@@ -54,11 +54,11 @@ export class AppService {
       picUrl: '/assets/racket4.PNG',
     },
   ];
-    getOverview():any {
-    return this.overviewData;
-    } 
+  getOverviewPageData(): any {
+    return this.overviewPageData;
+  }
 
-  getCapture():any {
-    return this.previewData;
-    } 
+  getCapturePageData(): any {
+    return this.capturePageData;
+  }
 }

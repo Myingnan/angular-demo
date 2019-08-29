@@ -5,13 +5,14 @@ import { AppService } from '../app.service';
   selector: 'app-overview',
   templateUrl: './overview.page.html',
   styleUrls: ['./overview.page.scss'],
+  providers: [AppService],  
 })
 export class OverviewPage implements OnInit {
-  overviewData: any;
+  overviewPageData: any;
 
   constructor(public service: AppService) { }
 
   ngOnInit() {
-    this.overviewData = this.service.getOverview();
+    this.overviewPageData = this.service.getOverviewPageData();
   }
 }

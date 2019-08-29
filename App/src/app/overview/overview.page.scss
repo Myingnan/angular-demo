@@ -7,7 +7,7 @@ ion-title{
 .icon-refresh{
     color:#fd687d;
     float: right;
-    margin-right: 3%;
+    margin-right: 6px;
     font-size: 20px;
 }
 .icon-note{
@@ -17,32 +17,38 @@ ion-title{
 .icon-funnel{
     color:#fd687d;
     font-size: 18px;
-    margin-left: 10%;
+    margin-left: 35px;
 }
 .icon-arrow-round-up{
     font-size: 25px;
     color:#fd687d;
     font-weight: bold;
 }
+.item-button{
+    display: flex;
+    justify-content: space-around; 
+}
 ion-button{
     --background: #fd687d;
     --background-activated:#8d93ab;
     --border-radius: 15px;
-    width: 100%;
+    flex-grow: 1;
 }
 .text-item{
+    display: flex;
     --background:#f4f5f8;
     font-size: 15px;
 }
 .text-note{
       --color:black;
+      flex-grow: 1;
 }
 .text-note-second{
     --color:#fd687d;
+    flex-grow: 1;
 }
 .button-number{
     --background:#8d93ab;
     --border-radius:80px;
     width: 27px;
-    margin-left: -45%;
 }
