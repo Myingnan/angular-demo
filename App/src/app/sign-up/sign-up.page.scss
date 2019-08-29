@@ -1,6 +1,9 @@
+.content-left-margin {
+    margin-left: 30px;
+}
+
 .sign{
-    margin-left: 10%;
-    padding-top: 20%;
+    padding-top: 60px;
 }
 
 .sign-icon {
@@ -15,37 +18,30 @@
 }
 
 .item-margin1 {
-    margin-left: 10%;
-    margin-top: 20%;
+    margin-top: 45px;
 }
 
 .item-margin2 {
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 30px;
 }
 
 .item-margin3 {
-    margin-left: 10%;
-    margin-top: 15%;
+    margin-top: 55px;
+    display: flex;
 }
 
 ion-button {
-    width: 70%;
-    height: 100%;
+    flex-grow:1;
+    height: 38px;
     text-align: left;
     --background: #fd687d;
     --background-activated: #f4f5f8;
     color: white;
-    font-size: 90%;
-}
-
-.icon {
-    margin-left: 60%;
 }
 
 .loginLink {
-    margin-left: 10%;
-    margin-top: 45%;
+    
+    margin-top: 130px;
     color: #8d93ab;
 }
 
