@@ -66,7 +66,7 @@ export class InMemoryAppDbService implements InMemoryDbService {
 
         let inspector: Inspector[] = [
             {
-                picUrl: "../../assets/inspector/1.PNG",
+                picUrl: "../../assets/safetyinspector/1.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
                 afcontent: "a cup of coffee on a table",
@@ -74,7 +74,7 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 atcontent: "table: coffee: cup"
             },
             {
-                picUrl: "../../assets/inspector/2.PNG",
+                picUrl: "../../assets/safetyinspector/2.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
                 afcontent: "a cup of coffee on a table",
@@ -82,7 +82,7 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 atcontent: "table: coffee: cup"
             },
             {
-                picUrl: "../../assets/inspector/3.PNG",
+                picUrl: "../../assets/safetyinspector/3.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
                 afcontent: "a cup of coffee on a table",
@@ -90,7 +90,7 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 atcontent: "table: coffee: cup"
             },
             {
-                picUrl: "../../assets/inspector/4.PNG",
+                picUrl: "../../assets/safetyinspector/4.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
                 afcontent: "a cup of coffee on a table",
@@ -98,7 +98,7 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 atcontent: "table: coffee: cup"
             },
             {
-                picUrl: "../../assets/inspector/5.PNG",
+                picUrl: "../../assets/safetyinspector/5.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
                 afcontent: "a cup of coffee on a table",
