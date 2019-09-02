@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'capture', loadChildren: './capture/capture.module#CapturePageModule' },
   { path: 'overview', loadChildren: './overview/overview.module#OverviewPageModule' },
   { path: 'tags', loadChildren: './tags/tags.module#TagsPageModule' },
-  { path: 'person', loadChildren: './person/person.module#PersonPageModule' }
+  { path: 'person', loadChildren: './person/person.module#PersonPageModule' },
+  { path: 'safetyinspector', loadChildren: './safetyinspector/safetyinspector.module#SafetyinspectorPageModule' }
 
 ];
 @NgModule({

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { TalkService } from './talk.service';
+import { Talks } from 'src/entity/talks';
 
 @Component({
   selector: 'app-talk',
@@ -8,16 +9,16 @@ import { TalkService } from './talk.service';
   styleUrls: ['./talk.page.scss'],
   providers: [TalkService]
 })
-export class TalkPage implements OnInit {
-  talks: any;
-  constructor(public nav: NavController, private service: TalkService) { }
+export class TalkPage {
+  talks: Talks[] = [];
+
+  constructor(public nav: NavController, private talkservice: TalkService) {
+    this.talkservice.getAll().subscribe(value => {
+      this.talks = value;
+    });
+  }
 
   canGoBack() {
     this.nav.back();
   }
-
-  ngOnInit() {
-    this.talks = this.service.getAll();
-  }
-
 }

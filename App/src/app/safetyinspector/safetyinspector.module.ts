@@ -5,15 +5,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TalkPage } from './talk.page';
-import { TalkService } from './talk.service';
-import { HttpClientModule } from '@angular/common/http';
+import { SafetyinspectorPage } from './safetyinspector.page';
 import { MockWebApiModule } from 'src/mockData/mock-web-api.module';
+import { HttpClientModule } from '@angular/common/http';
+import { InspectorService } from './safetyinspector.service';
 
 const routes: Routes = [
   {
     path: '',
-    component: TalkPage
+    component: SafetyinspectorPage
   }
 ];
 
@@ -26,7 +26,7 @@ const routes: Routes = [
     HttpClientModule,
     MockWebApiModule
   ],
-  declarations: [TalkPage],
-  providers: [TalkService]
+  declarations: [SafetyinspectorPage],
+  providers: [InspectorService]
 })
-export class TalkPageModule {}
+export class SafetyinspectorPageModule {}
