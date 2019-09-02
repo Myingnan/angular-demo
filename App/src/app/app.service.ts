@@ -54,11 +54,43 @@ export class AppService {
       picUrl: '/assets/racket4.PNG',
     },
   ];
+
+  public tagsPageData = [
+    {
+      val: 'smoke', isChecked: true
+    },
+    {
+      val: 'fire', isChecked: false
+    },
+    {
+      val: 'car', isChecked: false
+    },
+    {
+      val: 'person', isChecked: false
+    },
+    {
+      val: 'lootoo', isChecked: false
+    },
+    {
+      val: 'tree', isChecked: false
+    },
+    {
+      val: 'phone', isChecked: false
+    },
+    {
+      val: 'cup', isChecked: false
+    },
+  ];
+
   getOverviewPageData(): any {
     return this.overviewPageData;
   }
 
   getCapturePageData(): any {
     return this.capturePageData;
+  }
+
+  getTagsPageData(): any {
+    return this.tagsPageData;
   }
 }
