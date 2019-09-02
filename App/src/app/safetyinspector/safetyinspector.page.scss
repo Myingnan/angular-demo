@@ -40,12 +40,13 @@ ion-button {
     --background: #fd687d;
     --background-activated:#8d93ab;
     --border-radius: 15px;
-    height: 35px;
+    height: 30px;
     flex-grow: 1;
 }
 
 .text-item {
     display: flex;
+    justify-content: space-around; 
     --background:#f4f5f8;
     font-size: 15px;
 }
