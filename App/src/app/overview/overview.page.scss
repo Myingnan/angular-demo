@@ -2,13 +2,18 @@ ion-toolbar{
     --background: #f4f5f8;
 }
 ion-title{
-    font-size: 17px;
+    font-size: 14px;
 }
 .icon-refresh{
     color:#fd687d;
     float: right;
     margin-right: 6px;
     font-size: 20px;
+}
+.link-note{
+    --color:rgb(4, 4, 241);
+    text-decoration:underline;
+    font-size: 14px;
 }
 .icon-note{
     --color:#fd687d;
@@ -24,15 +29,13 @@ ion-title{
     color:#fd687d;
     font-weight: bold;
 }
-.item-button{
-    display: flex;
-    justify-content: space-around; 
-}
 ion-button{
+    margin: auto;
     --background: #fd687d;
     --background-activated:#8d93ab;
-    --border-radius: 15px;
-    flex-grow: 1;
+    --border-radius: 10px;
+    width: 140px;
+    height: 30px;
 }
 .text-item{
     display: flex;
