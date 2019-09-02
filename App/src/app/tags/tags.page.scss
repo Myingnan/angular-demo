@@ -9,19 +9,16 @@ ion-item{
     --border-color:#f4f5f8;
 }
 ion-checkbox{
-    margin-left: 100px;
+    margin-left: 120px;
     --background-checked:#fd687d;
     --border-color-checked:#fd687d;
 }
 item-list{
     margin-top: 60px;
 }
-.item-button{
-    display:flex;
-}
 ion-button{
-    --border-radius:15px;
+    margin: auto;
+    --border-radius:10px;
     --background:#fd687d;
     --background-activated:#8d93ab;
-    flex-grow: 1;
 }
