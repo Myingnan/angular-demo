@@ -1,3 +1,6 @@
+ion-title{
+    font-size:14px;
+}
 ion-card{
     --background:#f4f5f8;
     height: 100px;
@@ -29,23 +32,25 @@ ion-note{
     height: 150px;
 }
 .detail-pic{
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     margin: 0 auto;
 }
 .item-button{
     display: flex;
 }
 ion-button{
-    --border-radius:15px;
+    --border-radius:12px;
     --background:#fd687d;
     --background-activated:#8d93ab;
     flex-grow:1;
+    height: 40px;
 }
 .button-grey{
     --border-radius:20px;
     --background:#8d93ab;
     --background-activated:#fd687d;
+    height: 20px;
 }
 .label-front{
     font-size: 15px;
