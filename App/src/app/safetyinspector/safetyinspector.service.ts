@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Talks } from 'src/entity/talks';
+import { Inspector } from 'src/entity/inspector';
 
 
 @Injectable()
-export class TalkService {
+export class InspectorService {
     private headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     constructor(private http: HttpClient) {
     }
 
-    getAll(): Observable<Talks[]> {
-        return this.http.get<Talks[]>("api/talks", { headers: this.headers });
+    getAll(): Observable<Inspector[]> {
+        return this.http.get<Inspector[]>("api/inspector", { headers: this.headers });
     }
 }

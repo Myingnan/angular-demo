@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Safety Inspector AI Status Evaluator</ion-title>
+    <ion-icon class="icon-refresh" name="refresh"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="full">
+    <a class="link-color" [routerLink]="[ '/overview' ]">Keep your workers and assets safte</a>
+    <ion-icon class="icon-funnel" name="funnel"></ion-icon>
+    <ion-note class="icon-note">FILTER</ion-note>
+    <ion-icon class="icon-arrow-round-up" name="arrow-round-up"></ion-icon>
+    <ion-note class="icon-note">DATE</ion-note>
+  </ion-item>
+
+  <ion-item class="item-button" lines="none">
+    <ion-button [routerLink]="[ '/capture' ]">Take Picture</ion-button>
+    <ion-button [routerLink]="[ '/talk' ]">Video Indexer</ion-button>
+    <ion-button [routerLink]="[ '/capture' ]">Submit Incident</ion-button>
+  </ion-item>
+
+  <ion-item lines="none" class="text-item">
+    <ion-note class="text-note">Inspector</ion-note>
+    <ion-note class="text-note-second">Cong Ma</ion-note>
+    <ion-note class="text-note">Tag to be detected</ion-note>
+    <ion-button class="bg-rgba" [routerLink]="[ '/tags' ]">laptop</ion-button>
+  </ion-item>
+
+  <ion-item *ngFor="let inspector of Inspector">
+    <ion-avatar slot="end">
+      <img [src]="inspector.picUrl">
+    </ion-avatar>
+    <ion-label>
+      <p class="icon-color">
+        <ion-icon name="list"></ion-icon>{{inspector.date}}
+      </p>
+      <h2 class="font-color">{{inspector.aftitle}}:</h2>
+      <p>{{inspector.afcontent}}</p>
+      <h2 class="font-color">{{inspector.attitle}}:</h2>
+      <p>{{inspector.atcontent}}</p>
+    </ion-label>
+  </ion-item>
+</ion-content>
