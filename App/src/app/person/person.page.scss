@@ -1,0 +1,36 @@
+ion-icon{
+    color:#fd687d;
+}
+ion-toolbar{
+    --background:#f4f5f8;
+}
+.item-title{
+    --border-width:10px;
+    --border-color:white;
+}
+.detail-pic{
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.item-button{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    --border-width:0px;
+    margin-top: 30px;
+}
+ion-button{
+    --border-radius:15px;
+    --background:#fd687d;
+    --background-activated:#8d93ab;
+    flex-grow: 1;
+}
+.button-cancel{
+    --border-radius:15px;
+    --background:#e5e7ec;
+    --background-activated:#fd687d;
+    flex-grow: 1;
+    --color:rgb(108, 108, 247);
+}

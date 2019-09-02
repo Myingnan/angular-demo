@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tag Local On</ion-title>
+    <ion-icon name="arrow-round-back" size="large" [routerLink]="[ '/overview' ]"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="none"  class="item-title">
+    You can find a restricted/forbidden zone Anomaly detection: fire & smoke, spills, leaks, pipelines (drones, robots)
+    Overcrowding/max. occupancy Slip & fall detection.
+  </ion-item>
+  <ion-list>
+    <ion-item *ngFor="let tag of tagsPageData" lines="none">
+      <ion-label>{{tag.val}}</ion-label>
+      <ion-checkbox slot="start" [(ngModel)]="tag.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-item lines="none" class="item-button">
+    <ion-button size="largre">Submit</ion-button>
+    <ion-button size="largre">Cancel</ion-button>
+  </ion-item>
+</ion-content>
