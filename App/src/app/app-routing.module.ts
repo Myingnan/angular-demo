@@ -4,13 +4,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
   { path: 'talk', loadChildren: './talk/talk.module#TalkPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'sign-up', loadChildren: './sign-up/sign-up.module#SignUpPageModule' },
   { path: 'capture', loadChildren: './capture/capture.module#CapturePageModule' },
-  { path: 'overview', loadChildren: './overview/overview.module#OverviewPageModule' },  { path: 'tags', loadChildren: './tags/tags.module#TagsPageModule' },
+  { path: 'overview', loadChildren: './overview/overview.module#OverviewPageModule' },
+  { path: 'tags', loadChildren: './tags/tags.module#TagsPageModule' },
   { path: 'person', loadChildren: './person/person.module#PersonPageModule' }
 
 ];
