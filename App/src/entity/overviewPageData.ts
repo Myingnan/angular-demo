@@ -1,5 +1,8 @@
 export class OverviewPageData {
-    number: string;
+    date: string;
     pic: string;
-    title: string;
+    title1: string;
+    title2: string;
+    content1: string;
+    content2: string;
 }
