@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
+import { TagsPageData } from 'src/entity/tagsPageData';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tags',
@@ -8,11 +10,13 @@ import { AppService } from '../app.service';
   providers: [AppService],
 })
 export class TagsPage implements OnInit {
-  tagsPageData: any;
-
-  constructor(public service: AppService) { }
-
   ngOnInit() {
-    this.tagsPageData = this.service.getTagsPageData();
+  }
+  tagsPageData: TagsPageData[] = [];
+
+  constructor(public nav: NavController, private appService: AppService) {
+    this.appService.getTagsPageData().subscribe(value => {
+      this.tagsPageData = value;
+    });
   }
 }

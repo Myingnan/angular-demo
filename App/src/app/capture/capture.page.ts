@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
+import { CapturePageData } from 'src/entity/capturePageData';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-capture',
@@ -16,11 +18,12 @@ export class CapturePage implements OnInit {
     slidesPerView: 1.6,
   };
 
-  capturePageData: any;
+  ngOnInit() { }
 
-  constructor(public service: AppService) { }
-
-  ngOnInit() {
-    this.capturePageData = this.service.getCapturePageData();
+  capturePageData: CapturePageData[] = [];
+  constructor(public nav: NavController, private appService: AppService) {
+    this.appService.getCapturePageData().subscribe(value => {
+      this.capturePageData = value;
+    });
   }
 }
