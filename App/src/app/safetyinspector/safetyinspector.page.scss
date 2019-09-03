@@ -9,10 +9,11 @@ ion-title {
     float: right;
     margin-right: 6px;
     font-size: 20px;
+    color: white;
 }
 .icon-note {
-    --color:#fd687d;
-    font-size: 14px;
+    --color:#8d93ab;
+    font-size: 12px;
 }
 
 .link-color {
@@ -21,13 +22,13 @@ ion-title {
 }
 
 .icon-funnel {
-    color:#fd687d;
+    color:#8d93ab;
     font-size: 18px;
     margin-left: 35px;
 }
 .icon-arrow-round-up {
     font-size: 25px;
-    color:#fd687d;
+    color:#8d93ab;
     font-weight: bold;
 }
 
@@ -72,6 +73,19 @@ ion-button {
     color: rgb(118, 173, 235);
 }
 
+.date-color {
+    color: rgb(118, 173, 235);
+}
+
 .font-color {
     color: rgba(224, 91, 28, 0.904);
+}
+
+ion-button {
+    --background: rgba(0, 0, 0, 0); 
+    --background-activated: #8d93ab;
+}
+
+ion-icon {
+    color: #fd687d;
 }

@@ -15,9 +15,15 @@
   </ion-item>
 
   <ion-item class="item-button" lines="none">
-    <ion-button>Take Picture</ion-button>
-    <ion-button>Video Indexer</ion-button>
-    <ion-button>Submit Incident</ion-button>
+    <ion-button>
+      <ion-icon name="reverse-camera" size="large"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon name="videocam" size="large"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon name="musical-notes" size="large"></ion-icon>
+    </ion-button>
   </ion-item>
 
   <ion-item lines="none" class="text-item">
@@ -31,8 +37,8 @@
     <ion-row>
       <ion-col size="8">
         <ion-label>
-          <p class="icon-color">
-            <ion-icon name="list"></ion-icon>{{inspector.date}}
+          <p class="date-color">
+            <ion-icon name="list" class="icon-color"></ion-icon>{{inspector.date}}
           </p>
           <h3 class="font-color">{{inspector.aftitle}}:</h3>
           <p>{{inspector.afcontent}}</p>
@@ -41,7 +47,7 @@
         </ion-label>
       </ion-col>
       <ion-col size="4">
-        <ion-img [src]="inspector.picUrl"  [routerLink]="[ '/person' ]"></ion-img>
+        <ion-img [src]="inspector.picUrl" [routerLink]="[ '/person' ]"></ion-img>
       </ion-col>
     </ion-row>
   </ion-grid>
