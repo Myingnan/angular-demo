@@ -63,7 +63,7 @@ ion-button {
 
 .bg-rgba {
     --background: rgba(0, 0, 0, 0); 
-    --background-activated: rgba(224, 91, 28, 0.904);
+    --background-activated: rgba(0, 0, 0, 0); 
     --color:black;
     flex-grow: 1;
     font-size: 12px;
@@ -83,9 +83,13 @@ ion-button {
 
 ion-button {
     --background: rgba(0, 0, 0, 0); 
-    --background-activated: #8d93ab;
+    --background-activated: rgba(0, 0, 0, 0); 
 }
 
 ion-icon {
     color: #fd687d;
+}
+
+p {
+    white-space: normal;
 }

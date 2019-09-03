@@ -82,7 +82,7 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 aftitle: "AI Evaluator",
                 afcontent: "a desk with a laptop computer sitting on top of a table",
                 attitle: "AI Tags",
-                atcontent: "table: desk: laptop: computer "
+                atcontent: "table: desk: laptop: computer"
             },
             {
                 picUrl: "../../assets/safetyinspector/3.PNG",
