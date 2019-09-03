@@ -77,33 +77,33 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 picUrl: "../../assets/safetyinspector/2.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
-                afcontent: "a cup of coffee on a table",
+                afcontent: "a desk with a laptop computer sitting on top of a table",
                 attitle: "AI Tags",
-                atcontent: "table: coffee: cup"
+                atcontent: "table: desk: laptop: computer "
             },
             {
                 picUrl: "../../assets/safetyinspector/3.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
-                afcontent: "a cup of coffee on a table",
+                afcontent: "a desk with a computer in an office",
                 attitle: "AI Tags",
-                atcontent: "table: coffee: cup"
+                atcontent: "desk: computer: office"
             },
             {
                 picUrl: "../../assets/safetyinspector/4.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
-                afcontent: "a cup of coffee on a table",
+                afcontent: "a person swinging g golf club",
                 attitle: "AI Tags",
-                atcontent: "table: coffee: cup"
+                atcontent: "person: golf: club"
             },
             {
                 picUrl: "../../assets/safetyinspector/5.PNG",
                 date: "2019/8/22 15:10",
                 aftitle: "AI Evaluator",
-                afcontent: "a cup of coffee on a table",
+                afcontent: "a person hulding a football ball",
                 attitle: "AI Tags",
-                atcontent: "table: coffee: cup"
+                atcontent: "person: football: ball"
             }
         ];
         return { talks, inspector };
