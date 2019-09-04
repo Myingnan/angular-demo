@@ -1,12 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Tag Local On</ion-title>
-    <ion-icon name="arrow-round-back" size="large" [routerLink]="[ '/safetyinspector' ]"></ion-icon>
+    <ion-button (click)="canGoBack()" class="back-button">
+      <ion-icon name="arrow-dropleft" size="large"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-item lines="none"  class="item-title">
+  <ion-item lines="none" class="item-title">
     You can find a restricted/forbidden zone Anomaly detection: fire & smoke, spills, leaks, pipelines (drones, robots)
     Overcrowding/max. occupancy Slip & fall detection.
   </ion-item>
@@ -18,6 +20,6 @@
   </ion-list>
   <ion-item lines="none">
     <ion-button size="default">Submit</ion-button>
-    <ion-button size="default">Cancel</ion-button>
+    <ion-button class="button-cancel" size="default">Cancel</ion-button>
   </ion-item>
 </ion-content>

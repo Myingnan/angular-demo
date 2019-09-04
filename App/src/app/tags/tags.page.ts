@@ -10,8 +10,7 @@ import { NavController } from '@ionic/angular';
   providers: [AppService],
 })
 export class TagsPage implements OnInit {
-  ngOnInit() {
-  }
+
   tagsPageData: TagsPageData[] = [];
 
   constructor(public nav: NavController, private appService: AppService) {
@@ -19,4 +18,10 @@ export class TagsPage implements OnInit {
       this.tagsPageData = value;
     });
   }
+
+  canGoBack() {
+    this.nav.back();
+  }
+
+  ngOnInit() { }
 }

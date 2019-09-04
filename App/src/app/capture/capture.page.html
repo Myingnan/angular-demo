@@ -1,7 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Magic Mirror Capture</ion-title>
-    <ion-icon name="arrow-round-back" size="large" [routerLink]="[ '/overview' ]"></ion-icon>
+    <ion-button (click)="canGoBack()" class="back-button">
+      <ion-icon name="arrow-dropleft" size="large"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 

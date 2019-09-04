@@ -5,6 +5,7 @@ import { Inspector } from "src/entity/inspector";
 import { OverviewPageData } from 'src/entity/overviewPageData';
 import { CapturePageData } from 'src/entity/capturePageData';
 import { TagsPageData } from 'src/entity/tagsPageData';
+import { Person } from "src/entity/person";
 
 export class InMemoryAppDbService implements InMemoryDbService {
     createDb(): {} | Observable<{}> | Promise<{}> {
@@ -113,96 +114,105 @@ export class InMemoryAppDbService implements InMemoryDbService {
         let overviewPageData: OverviewPageData[] = [
             {
                 date: "2019/8/22 15:10",
-                pic: '/assets/Capture1.PNG',
+                pic: "../../assets/overview/1.PNG",
                 title1: "AI Evaluator :",
-                content1: '1 Tip For Gaining Mass Fast',
+                content1: "1 Tip For Gaining Mass Fast",
                 title2: "AI Tags :",
-                content2: 'a person swinging g club Chat bot',
+                content2: "a person swinging g club Chat bot",
             },
             {
                 date: "2019/8/22 15:10",
-                pic: '/assets/Capture2.PNG',
+                pic: "../../assets/overview/2.PNG",
                 title1: "AI Evaluator :",
-                content1: '2 Tips For Gaining Mass Fast',
+                content1: "2 Tips For Gaining Mass Fast",
                 title2: "AI Tags :",
-                content2: 'a person swinging g club Chat bot',
+                content2: "a person swinging g club Chat bot",
             },
             {
                 date: "2019/8/22 15:10",
-                pic: '/assets/Capture3.PNG',
+                pic: "../../assets/overview/3.PNG",
                 title1: "AI Evaluator :",
-                content1: '3 Tips For Gaining Mass Fast',
+                content1: "3 Tips For Gaining Mass Fast",
                 title2: "AI Tags :",
-                content2: 'a person swinging g club Chat bot',
+                content2: "a person swinging g club Chat bot",
             },
             {
                 date: "2019/8/22 15:10",
-                pic: '/assets/Capture4.PNG',
+                pic: "../../assets/overview/4.PNG",
                 title1: "AI Evaluator :",
-                content1: '4 Tips For Gaining Mass Fast',
+                content1: "4 Tips For Gaining Mass Fast",
                 title2: "AI Tags :",
-                content2: 'a person swinging g club Chat bot',
+                content2: "a person swinging g club Chat bot",
             },
             {
                 date: "2019/8/22 15:10",
-                pic: '/assets/Capture5.PNG',
+                pic: "../../assets/overview/5.PNG",
                 title1: "AI Evaluator :",
-                content1: '5 Tips For Gaining Mass Fast',
+                content1: "5 Tips For Gaining Mass Fast",
                 title2: "AI Tags :",
-                content2: 'a person swinging g club Chat bot',
+                content2: "a person swinging g club Chat bot",
             },
             {
                 date: "2019/8/22 15:10",
-                pic: '/assets/Capture6.PNG',
+                pic: "../../assets/overview/6.PNG",
                 title1: "AI Evaluator :",
-                content1: '6 Tips For Gaining Mass Fast',
+                content1: "6 Tips For Gaining Mass Fast",
                 title2: "AI Tags :",
-                content2: 'a person swinging g club Chat bot',
+                content2: "a person swinging g club Chat bot",
             },
         ];
 
         let capturePageData: CapturePageData[] = [
             {
-                picUrl: '/assets/racket1.PNG',
+                picUrl: "/assets/racket1.PNG",
             },
             {
-                picUrl: '/assets/racket2.PNG',
+                picUrl: "/assets/racket2.PNG",
             },
             {
-                picUrl: '/assets/racket3.PNG',
+                picUrl: "/assets/racket3.PNG",
             },
             {
-                picUrl: '/assets/racket4.PNG',
+                picUrl: "/assets/racket4.PNG",
             },
         ];
 
         let tagsPageData: TagsPageData[] = [
             {
-                val: 'smoke', isChecked: true
+                val: "smoke", isChecked: true
             },
             {
-                val: 'fire', isChecked: false
+                val: "fire", isChecked: false
             },
             {
-                val: 'car', isChecked: false
+                val: "car", isChecked: false
             },
             {
-                val: 'person', isChecked: false
+                val: "person", isChecked: false
             },
             {
-                val: 'lootoo', isChecked: false
+                val: "lootoo", isChecked: false
             },
             {
-                val: 'tree', isChecked: false
+                val: "tree", isChecked: false
             },
             {
-                val: 'phone', isChecked: false
+                val: "phone", isChecked: false
             },
             {
-                val: 'cup', isChecked: false
+                val: "cup", isChecked: false
             },
         ];
 
-        return { talks, inspector, overviewPageData, capturePageData, tagsPageData };
+        let person: Person[] = [
+            {
+                id: "1142210",
+                date: "2019/8/22 15:10",
+                name: "Cong Ma",
+                content: "Falling in love with yourself first doesn’t make you vain or selfish, it makes you indestructible. "
+            }
+        ];
+
+        return { talks, inspector, overviewPageData, capturePageData, tagsPageData, person };
     }
 }

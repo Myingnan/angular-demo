@@ -1,29 +1,35 @@
-ion-icon{
-    color:#fd687d;
+ion-toolbar {
+    --background: #fd687d;
+    --color: white;
 }
-ion-toolbar{
-    --background:#f4f5f8;
-}
-ion-note{
-    --color:blue;
-}
-.detail-pic{
+
+.detail-pic {
     width: 280px;
     height: 420px;
     margin: auto;
 }
-ion-button{
+
+ion-button {
     margin: auto;
     --border-radius:10px;
     --background:#fd687d;
     --background-activated:#8d93ab;
     width: 150px;
 }
-.button-cancel{
+
+.button-cancel {
     margin: auto;
     --border-radius:10px;
-    --background:#e5e7ec;
+    --background:#bbc0d6;
     --background-activated:#fd687d;
-    --color:rgb(108, 108, 247);
     width: 150px;
+}
+
+p,h3 {
+    white-space: normal;
+    color: rgb(108, 108, 247);
+}
+
+ion-text {
+    color:black;
 }

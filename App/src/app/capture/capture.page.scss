@@ -1,5 +1,6 @@
-ion-title{
-    font-size:14px;
+ion-toolbar {
+    --background: #fd687d;
+    --color: white;
 }
 ion-card{
     --background:#f4f5f8;
@@ -7,11 +8,17 @@ ion-card{
     display: flex;
     align-items: center;
 }
+
+.back-button {
+    --background: rgba(0, 0, 0, 0); 
+    --background-activated: rgba(0, 0, 0, 0); 
+}
+
 .label-name{
     --color: #000;
     font-weight: bold;
     margin-left: 60px;
-    font-size: 20px;
+    font-size: 15px;
     flex-grow: 1;
 }
 .img-photo{
@@ -23,7 +30,7 @@ ion-note{
     font-weight: bold;
 }
 .note-detail{
-    --color: black;
+    --color: #8d93ab;
     width: 300px;
     font-weight: normal;
 }

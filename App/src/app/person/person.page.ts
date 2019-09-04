@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Person } from 'src/entity/person';
+import { PersonService } from './person.service';
 
 @Component({
   selector: 'app-person',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonPage implements OnInit {
 
-  constructor() { }
+  person: Person[] = [];
+
+  constructor(private personservice: PersonService) {
+    this.personservice.getAll().subscribe(value => {
+      this.person = value;
+    });
+  }
 
   ngOnInit() {
   }
