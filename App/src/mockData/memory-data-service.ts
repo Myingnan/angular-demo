@@ -214,13 +214,13 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 val: "cup", isChecked: false
             },
             {
-                val: "laptop", isChecked: false
+                val: "laptop", isChecked: true
             },
             {
                 val: "office", isChecked: false
             },
             {
-                val: "person", isChecked: true
+                val: "person", isChecked: false
             },
             {
                 val: "ball", isChecked: false
