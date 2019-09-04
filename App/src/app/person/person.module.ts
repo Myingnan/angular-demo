@@ -6,6 +6,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { PersonPage } from './person.page';
+import { MockWebApiModule } from 'src/mockData/mock-web-api.module';
+import { HttpClientModule } from '@angular/common/http';
+import { PersonService } from './person.service';
 
 const routes: Routes = [
   {
@@ -19,8 +22,11 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    HttpClientModule,
+    MockWebApiModule
   ],
-  declarations: [PersonPage]
+  declarations: [PersonPage],
+  providers: [PersonService]
 })
 export class PersonPageModule {}

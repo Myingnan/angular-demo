@@ -6,12 +6,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-item lines="none">
-    <p>
-      Donec magna odio, <ion-text color="primary">semper</ion-text> ac nibh et, vestibulum eleifend felis.
-      Donec <ion-text color="secondary">pulvinar</ion-text> ex non quam vulputate malesuada in a magna.
-      Praesent massa arcu, <ion-text color="danger">vehicula</ion-text> id pharetra et, cursus at lectus.
-    </p>
+  <ion-item *ngFor="let person of person" lines="none">
+    <ion-label>
+      <p>personId:<ion-text>{{person.id}}</ion-text>
+      </p>
+      <p>Date:<ion-text>{{person.date}}</ion-text>
+      </p>
+      <h3>{{person.name}}:</h3>
+      <p>
+        <ion-text>{{person.content}}</ion-text>
+      </p>
+    </ion-label>
   </ion-item>
   <ion-img class="detail-pic" src="/assets/office.PNG"></ion-img>
   <ion-item lines="none">

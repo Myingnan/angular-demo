@@ -18,12 +18,16 @@ export class CapturePage implements OnInit {
     slidesPerView: 1.6,
   };
 
-  ngOnInit() { }
-
   capturePageData: CapturePageData[] = [];
   constructor(public nav: NavController, private appService: AppService) {
     this.appService.getCapturePageData().subscribe(value => {
       this.capturePageData = value;
     });
   }
+
+  canGoBack() {
+    this.nav.back();
+  }
+
+  ngOnInit() { }
 }

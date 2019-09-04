@@ -1,43 +1,39 @@
 ion-toolbar{
-    --background: #f4f5f8;
+    --background: #fd687d;
+    --color: white;
 }
 ion-title{
     font-size: 14px;
 }
 .icon-refresh{
-    color:#fd687d;
     float: right;
     margin-right: 6px;
     font-size: 18px;
 }
-.link-note{
-    --color:rgb(4, 4, 241);
-    text-decoration:underline;
-    font-size: 13px;
+a {
+    color: #8d93ab;
+    width: 215px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 15px;
 }
 .icon-note{
-    --color:#fd687d;
+    --color:#8d93ab;
     font-size: 12px;
 }
 .icon-funnel{
-    color:#fd687d;
+    color:#8d93ab;
     font-size: 18px;
     margin-left: 45px;
 }
 .icon-arrow-round-up{
     font-size: 25px;
-    color:#fd687d;
+    color:#8d93ab;
     font-weight: bold;
 }
-ion-button{
-    margin: auto;
-    --background: #fd687d;
-    --background-activated:#8d93ab;
-    --border-radius: 10px;
-    width: 130px;
-    height: 30px;
-    font-size: 11px;
-}
+
 .text-item{
     display: flex;
     --background:#f4f5f8;
@@ -56,13 +52,9 @@ ion-button{
 .text-note{
     font-size:13px;
     margin-left: 6px;
+    --color: #8d93ab;
 }
-.button-number{
-    --background:#8d93ab;
-    --border-radius:3px;
-    width: 9px;
-    height: 20px;
-}
+
 .options-icon{
     font-size: 12px;
 }
@@ -71,7 +63,19 @@ ion-button{
 }
 .text-note-shadow{
     font-size:13px;
-    background-color:#c0c4d6;
-    --color:black;
+    --color: #8d93ab;
     margin-left: 6px;
+}
+
+.item-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+ion-button {
+    --background: rgba(0, 0, 0, 0); 
+    --background-activated: rgba(0, 0, 0, 0); 
+    --color: #fd687d;
+    flex-grow: 1;   
 }

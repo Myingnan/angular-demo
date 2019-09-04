@@ -8,16 +8,20 @@
 </ion-header>
 
 <ion-item lines="full">
-  <ion-note class="link-note" [routerLink]="[ '/overview' ]">Makeatbon Team: Evil Queen</ion-note>
+  <a [routerLink]="[ '/overview' ]">Makeatbon Team: Evil Queen</a>
   <ion-icon class="icon-funnel" name="funnel"></ion-icon>
   <ion-note class="icon-note">FILTER</ion-note>
   <ion-icon class="icon-arrow-round-up" name="arrow-round-up"></ion-icon>
   <ion-note class="icon-note">DATE</ion-note>
 </ion-item>
 
-<ion-item lines="none">
-  <ion-button [routerLink]="[ '/capture' ]">Take Picture Form Mirror</ion-button>
-  <ion-button [routerLink]="[ '/talk' ]">Talk to Mirror</ion-button>
+<ion-item class="item-button" lines="none">
+  <ion-button [routerLink]="[ '/capture' ]">
+    <ion-icon name="reverse-camera" size="large"></ion-icon>
+  </ion-button>
+  <ion-button [routerLink]="[ '/talk' ]">
+    <ion-icon name="chatbubbles" size="large"></ion-icon>
+  </ion-button>
 </ion-item>
 
 <ion-item lines="none" class="text-item">
@@ -28,27 +32,29 @@
 </ion-item>
 
 <ion-content>
-  <ion-grid *ngFor="let overview of overviewPageData">
-    <ion-row>
-      <ion-col size="8">
-        <ion-icon class="options-icon" name="options" color="primary"></ion-icon>
-        <ion-note class="note-date" color="primary">{{overview.date}}</ion-note>
-        <ion-row>
-          <ion-note class="options-icon" color="danger">{{overview.title1}}</ion-note>
-        </ion-row>
-        <ion-row>
-          <ion-note class="text-note">{{overview.content1}}</ion-note>
-        </ion-row>
-        <ion-row>
-          <ion-note class="options-icon" color="danger">{{overview.title2}}</ion-note>
-        </ion-row>
-        <ion-row>
-          <ion-note class="text-note-shadow">{{overview.content2}}</ion-note>
-        </ion-row>
-      </ion-col>
-      <ion-col size="4">
-        <ion-img src="{{overview.pic}}"></ion-img>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-item *ngFor="let overview of overviewPageData">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8">
+          <ion-icon class="options-icon" name="options" color="primary"></ion-icon>
+          <ion-note class="note-date" color="primary">{{overview.date}}</ion-note>
+          <ion-row>
+            <ion-note class="options-icon" color="danger">{{overview.title1}}</ion-note>
+          </ion-row>
+          <ion-row>
+            <ion-note class="text-note">{{overview.content1}}</ion-note>
+          </ion-row>
+          <ion-row>
+            <ion-note class="options-icon" color="danger">{{overview.title2}}</ion-note>
+          </ion-row>
+          <ion-row>
+            <ion-note class="text-note-shadow">{{overview.content2}}</ion-note>
+          </ion-row>
+        </ion-col>
+        <ion-col size="4">
+          <ion-img src="{{overview.pic}}"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
 </ion-content>

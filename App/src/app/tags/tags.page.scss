@@ -1,24 +1,49 @@
-ion-content{
+ion-content {
     --background:#f4f5f8;
 }
-ion-item{
+
+ion-toolbar {
+    --background: #fd687d;
+    --color: white;
+}
+
+.back-button {
+    --background: rgba(0, 0, 0, 0); 
+    --background-activated: rgba(0, 0, 0, 0); 
+}
+
+ion-item {
     --background:#f4f5f8;
 }
-.item-title{
+
+.item-title {
     --border-width:25px;
     --border-color:#f4f5f8;
+    font-size: 14px;
 }
-ion-checkbox{
+
+ion-checkbox {
     margin-left: 120px;
     --background-checked:#fd687d;
     --border-color-checked:#fd687d;
 }
-item-list{
+
+item-list {
     margin-top: 60px;
 }
-ion-button{
+
+ion-button {
     margin: auto;
+    width: 130px;
     --border-radius:10px;
     --background:#fd687d;
     --background-activated:#8d93ab;
+}
+
+.button-cancel {
+    margin: auto;
+    width: 130px;
+    --border-radius:10px;
+    --background:#bbc0d6;
+    --background-activated:#fd687d;
 }
