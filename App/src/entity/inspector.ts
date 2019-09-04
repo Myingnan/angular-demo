@@ -5,4 +5,5 @@ export class Inspector {
     afcontent: string;
     attitle: string;
     atcontent: string;
+    detected: string;
 }

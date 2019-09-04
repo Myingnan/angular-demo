@@ -49,6 +49,11 @@
         </ion-col>
         <ion-col size="4">
           <ion-img [src]="inspector.picUrl" [routerLink]="[ '/person' ]"></ion-img>
+          <div class="div-color" *ngIf="inspector.detected">
+            <p>
+              Detected: {{inspector.detected}}
+            </p>
+          </div>
         </ion-col>
       </ion-row>
     </ion-grid>

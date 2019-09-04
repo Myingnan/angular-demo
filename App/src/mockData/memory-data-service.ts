@@ -75,7 +75,8 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 aftitle: "AI Evaluator",
                 afcontent: "a cup of coffee on a table",
                 attitle: "AI Tags",
-                atcontent: "table: coffee: cup"
+                atcontent: "table: coffee: cup",
+                detected: undefined
             },
             {
                 picUrl: "../../assets/safetyinspector/2.PNG",
@@ -83,7 +84,8 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 aftitle: "AI Evaluator",
                 afcontent: "a desk with a laptop computer sitting on top of a table",
                 attitle: "AI Tags",
-                atcontent: "table: desk: laptop: computer"
+                atcontent: "table: desk: laptop: computer",
+                detected: "laptop"
             },
             {
                 picUrl: "../../assets/safetyinspector/3.PNG",
@@ -91,7 +93,8 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 aftitle: "AI Evaluator",
                 afcontent: "a desk with a computer in an office",
                 attitle: "AI Tags",
-                atcontent: "desk: computer: office"
+                atcontent: "desk: computer: office",
+                detected: undefined
             },
             {
                 picUrl: "../../assets/safetyinspector/4.PNG",
@@ -99,7 +102,8 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 aftitle: "AI Evaluator",
                 afcontent: "a person swinging g golf club",
                 attitle: "AI Tags",
-                atcontent: "person: golf: club"
+                atcontent: "person: golf: club",
+                detected: undefined
             },
             {
                 picUrl: "../../assets/safetyinspector/5.PNG",
@@ -107,7 +111,35 @@ export class InMemoryAppDbService implements InMemoryDbService {
                 aftitle: "AI Evaluator",
                 afcontent: "a person hulding a football ball",
                 attitle: "AI Tags",
-                atcontent: "person: football: ball"
+                atcontent: "person: football: ball",
+                detected: undefined
+            },
+            {
+                picUrl: "../../assets/safetyinspector/7.PNG",
+                date: "2019/8/22 15:10",
+                aftitle: "AI Evaluator",
+                afcontent: "a person using a phone",
+                attitle: "AI Tags",
+                atcontent: "person: phone",
+                detected: undefined
+            },
+            {
+                picUrl: "../../assets/safetyinspector/6.PNG",
+                date: "2019/8/22 15:10",
+                aftitle: "AI Evaluator",
+                afcontent: "a person driving a car",
+                attitle: "AI Tags",
+                atcontent: "person: car",
+                detected: undefined
+            },
+            {
+                picUrl: "../../assets/safetyinspector/8.PNG",
+                date: "2019/8/22 15:10",
+                aftitle: "AI Evaluator",
+                afcontent: "a tree with many apple",
+                attitle: "AI Tags",
+                atcontent: "tree: apple",
+                detected: undefined
             }
         ];
 
@@ -179,28 +211,28 @@ export class InMemoryAppDbService implements InMemoryDbService {
 
         let tagsPageData: TagsPageData[] = [
             {
-                val: "smoke", isChecked: true
+                val: "cup", isChecked: false
             },
             {
-                val: "fire", isChecked: false
+                val: "laptop", isChecked: false
             },
             {
-                val: "car", isChecked: false
+                val: "office", isChecked: false
             },
             {
-                val: "person", isChecked: false
+                val: "person", isChecked: true
             },
             {
-                val: "lootoo", isChecked: false
-            },
-            {
-                val: "tree", isChecked: false
+                val: "ball", isChecked: false
             },
             {
                 val: "phone", isChecked: false
             },
             {
-                val: "cup", isChecked: false
+                val: "car", isChecked: false
+            },
+            {
+                val: "tree", isChecked: false
             },
         ];
 
