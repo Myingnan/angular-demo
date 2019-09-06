@@ -2,15 +2,20 @@ ion-toolbar {
     --background: #fd687d;
     --color: white;
 }
+
 ion-title {
     font-size: 17px;
 }
-.icon-refresh {
+
+.button-refresh {
     float: right;
     margin-right: 6px;
-    font-size: 20px;
+}
+
+.icon-refresh {
     color: white;
 }
+
 .icon-note {
     --color:#8d93ab;
     font-size: 12px;
@@ -31,10 +36,18 @@ a {
     font-size: 18px;
     margin-left: 35px;
 }
+
 .icon-arrow-round-up {
     font-size: 25px;
     color:#8d93ab;
     font-weight: bold;
+}
+
+.icon-arrow-round-down {
+    font-size: 25px;
+    color:#8d93ab;
+    font-weight: bold;
+    margin-left: -15px;
 }
 
 .item-button {

@@ -13,7 +13,7 @@ export class TalkPage {
   talks: Talks[] = [];
 
   constructor(public nav: NavController, private talkservice: TalkService) {
-    this.talkservice.getAll().subscribe(value => {
+    this.talkservice.getTalks().subscribe(value => {
       this.talks = value;
     });
   }

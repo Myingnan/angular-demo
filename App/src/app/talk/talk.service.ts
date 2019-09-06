@@ -10,7 +10,7 @@ export class TalkService {
     constructor(private http: HttpClient) {
     }
 
-    getAll(): Observable<Talks[]> {
+    getTalks(): Observable<Talks[]> {
         return this.http.get<Talks[]>("api/talks", { headers: this.headers });
     }
 }

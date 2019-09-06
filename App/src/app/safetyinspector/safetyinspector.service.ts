@@ -10,7 +10,7 @@ export class InspectorService {
     constructor(private http: HttpClient) {
     }
 
-    getAll(): Observable<Inspector[]> {
+    getInspector(): Observable<Inspector[]> {
         return this.http.get<Inspector[]>("api/inspector", { headers: this.headers });
     }
 }
