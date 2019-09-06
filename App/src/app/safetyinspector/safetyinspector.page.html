@@ -1,17 +1,24 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Safety Inspector AI Status Evaluator</ion-title>
-    <ion-icon class="icon-refresh" name="refresh"></ion-icon>
+    <ion-button class="button-refresh" href="javascript:location.reload()">
+      <ion-icon class="icon-refresh" name="refresh"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-item lines="full">
     <a [routerLink]="[ '/overview' ]">Keep your workers and assets safte</a>
-    <ion-icon class="icon-funnel" name="funnel"></ion-icon>
-    <ion-note class="icon-note">FILTER</ion-note>
-    <ion-icon class="icon-arrow-round-up" name="arrow-round-up"></ion-icon>
-    <ion-note class="icon-note">DATE</ion-note>
+    <ion-button (click)="filterClick()">
+      <ion-icon class="icon-funnel" name="funnel"></ion-icon>
+      <ion-note class="icon-note">FILTER</ion-note>
+    </ion-button>
+    <ion-button (click)="sortClick()">
+      <ion-icon class="icon-arrow-round-up" name="arrow-round-up"></ion-icon>
+      <ion-icon class="icon-arrow-round-down" name="arrow-round-down"></ion-icon>
+      <ion-note class="icon-note">DATE</ion-note>
+    </ion-button>
   </ion-item>
 
   <ion-item class="item-button" lines="none">
@@ -39,7 +46,7 @@
         <ion-col size="8">
           <ion-label>
             <p class="date-color">
-              <ion-icon name="list" class="icon-color"></ion-icon>{{inspector.date}}
+              <ion-icon name="options" class="icon-color"></ion-icon>{{inspector.date}}
             </p>
             <h3 class="font-color">{{inspector.aftitle}}:</h3>
             <p class="p-margin">{{inspector.afcontent}}</p>

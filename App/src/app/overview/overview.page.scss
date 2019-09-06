@@ -1,15 +1,14 @@
-ion-toolbar{
+ion-toolbar {
     --background: #fd687d;
     --color: white;
 }
-ion-title{
-    font-size: 14px;
-}
-.icon-refresh{
+
+.icon-refresh {
     float: right;
     margin-right: 6px;
-    font-size: 18px;
+    color: white;
 }
+
 a {
     color: #8d93ab;
     width: 215px;
@@ -19,49 +18,64 @@ a {
     display: block;
     font-size: 15px;
 }
-.icon-note{
+
+.icon-note {
     --color:#8d93ab;
     font-size: 12px;
 }
-.icon-funnel{
+
+.icon-funnel {
     color:#8d93ab;
     font-size: 18px;
     margin-left: 45px;
 }
-.icon-arrow-round-up{
+
+.icon-arrow-round-up {
     font-size: 25px;
     color:#8d93ab;
     font-weight: bold;
 }
 
-.text-item{
+.icon-arrow-round-down {
+    font-size: 25px;
+    color:#8d93ab;
+    font-weight: bold;
+    margin-left: -15px;
+}
+
+.text-item {
     display: flex;
     --background:#f4f5f8;
     font-size: 15px;
 }
-.text-note{
+
+.text-note {
       --color:black;
       flex-grow: 1;
       font-size: 12px;
 }
-.text-note-second{
+
+.text-note-second {
     --color:#fd687d;
     flex-grow: 1;
     font-size: 12px;    
 }
-.text-note{
+
+.text-note {
     font-size:13px;
     margin-left: 6px;
     --color: #8d93ab;
 }
 
-.options-icon{
+.options-icon {
     font-size: 12px;
 }
-.note-date{
+
+.note-date {
     font-size: 12px;
 }
-.text-note-shadow{
+
+.text-note-shadow {
     font-size:13px;
     --color: #8d93ab;
     margin-left: 6px;
