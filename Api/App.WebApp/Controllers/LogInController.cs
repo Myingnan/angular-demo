@@ -33,7 +33,6 @@ namespace App.WebApp.Controllers
         [HttpPost]
         public IActionResult Login([FromBody]SysUserInfo model) {
             RespondResult result = new RespondResult();
-            model.UserName = "zhangsan";
             SysUserInfo userInfo = systemUserService.GetLoginUserInfo(model.UserName);
             //用户不存在
             if (userInfo == null)
@@ -60,6 +59,29 @@ namespace App.WebApp.Controllers
             return Ok(result);
         }
 
+        [AllowAnonymous]
+        [HttpPost]
+        public IActionResult Registration([FromBody]SysUserInfo model)
+        {
+            RespondResult result = new RespondResult();
+            model.Id = Guid.NewGuid().ToString();
+            model.CreateTime = DateTime.Now;
+            model.UpdateTime = null;
+            model.Password = Md5Helper.Md5(model.Password);
+            int resultcount = systemUserService.AddUser(model);
+            //用户注册失败
+            if (resultcount == 0)
+            {
+                result.is_success = false;
+                result.msg = "注册失败";
+                result.result = null;
+            }
+            var tokenStr = AuthConfiguer.GetJWT(model, _jwtSettings);
 
+            result.is_success = true;
+            result.msg = "注册成功";
+            result.result = tokenStr;
+            return Ok(result);
+        }
     }
 }
