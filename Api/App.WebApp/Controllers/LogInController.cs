@@ -41,6 +41,7 @@ namespace App.WebApp.Controllers
                 result.is_success = false;
                 result.msg = "用户不存在";
                 result.result = null;
+                return NotFound(result);
             }
 
             //判断密码
@@ -51,11 +52,12 @@ namespace App.WebApp.Controllers
                 result.is_success = false;
                 result.msg = "密码错误";
                 result.result = null;
+                return Unauthorized(result);
             }
-            var tokenStr = AuthConfiguer.GetJWT(model, _jwtSettings);
 
+            var tokenStr = AuthConfiguer.GetJWT(userInfo, _jwtSettings);
             result.is_success = true;
-            result.msg = "";
+            result.msg = "登录成功";
             result.result = tokenStr;
             return Ok(result);
         }
@@ -76,9 +78,10 @@ namespace App.WebApp.Controllers
                 result.is_success = false;
                 result.msg = "注册失败";
                 result.result = null;
+                return Unauthorized(result);
             }
-            var tokenStr = AuthConfiguer.GetJWT(model, _jwtSettings);
 
+            var tokenStr = AuthConfiguer.GetJWT(model, _jwtSettings);
             result.is_success = true;
             result.msg = "注册成功";
             result.result = tokenStr;
