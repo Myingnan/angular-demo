@@ -31,7 +31,8 @@ namespace App.WebApp.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult Login([FromBody]SysUserInfo model) {
+        public IActionResult Login([FromBody]SysUserInfo model)
+        {
             RespondResult result = new RespondResult();
             SysUserInfo userInfo = systemUserService.GetLoginUserInfo(model.UserName);
             //用户不存在
@@ -60,7 +61,7 @@ namespace App.WebApp.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost]
+        [HttpGet]
         public IActionResult Registration([FromBody]SysUserInfo model)
         {
             RespondResult result = new RespondResult();
