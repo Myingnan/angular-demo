@@ -15,7 +15,6 @@ using App.WebApp.Startup;
 
 namespace App.WebApp.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class LogInController : ControllerBase
     {
@@ -29,6 +28,7 @@ namespace App.WebApp.Controllers
             this.systemUserService = _systemUserService;
             this.logger = _logger;
         }
+        [Route("api/[action]")]
         [AllowAnonymous]
         [HttpPost]
         public IActionResult Login([FromBody]SysUserInfo model)
@@ -41,7 +41,7 @@ namespace App.WebApp.Controllers
                 result.is_success = false;
                 result.msg = "用户不存在";
                 result.result = null;
-                return NotFound(result);
+                return Ok(result);
             }
 
             //判断密码
@@ -52,7 +52,7 @@ namespace App.WebApp.Controllers
                 result.is_success = false;
                 result.msg = "密码错误";
                 result.result = null;
-                return Unauthorized(result);
+                return Ok(result);
             }
 
             var tokenStr = AuthConfiguer.GetJWT(userInfo, _jwtSettings);
@@ -61,9 +61,9 @@ namespace App.WebApp.Controllers
             result.result = tokenStr;
             return Ok(result);
         }
-
+        [Route("api/[action]")]
         [AllowAnonymous]
-        [HttpGet]
+        [HttpPost]
         public IActionResult Registration([FromBody]SysUserInfo model)
         {
             RespondResult result = new RespondResult();
@@ -78,7 +78,7 @@ namespace App.WebApp.Controllers
                 result.is_success = false;
                 result.msg = "注册失败";
                 result.result = null;
-                return Unauthorized(result);
+                return Ok(result);
             }
 
             var tokenStr = AuthConfiguer.GetJWT(model, _jwtSettings);
