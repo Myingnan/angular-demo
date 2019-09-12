@@ -50,21 +50,16 @@ a {
 }
 
 .text-note {
-      --color:black;
+      --color: #8d93ab;
       flex-grow: 1;
       font-size: 12px;
+      margin-left: 6px;
 }
 
 .text-note-second {
     --color:#fd687d;
     flex-grow: 1;
     font-size: 12px;    
-}
-
-.text-note {
-    font-size:13px;
-    margin-left: 6px;
-    --color: #8d93ab;
 }
 
 .options-icon {
