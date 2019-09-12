@@ -9,36 +9,36 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-item lines="full">
-  <a [routerLink]="[ '/safetyinspector' ]">Makeatbon Team: Evil Queen</a>
-  <ion-button (click)="filterClick()">
-    <ion-icon class="icon-funnel" name="funnel"></ion-icon>
-    <ion-note class="icon-note">FILTER</ion-note>
-  </ion-button>
-  <ion-button (click)="sortClick()">
-    <ion-icon class="icon-arrow-round-up" name="arrow-round-up"></ion-icon>
-    <ion-icon class="icon-arrow-round-down" name="arrow-round-down"></ion-icon>
-    <ion-note class="icon-note">DATE</ion-note>
-  </ion-button>
-</ion-item>
-
-<ion-item class="item-button" lines="none">
-  <ion-button [routerLink]="[ '/capture' ]">
-    <ion-icon name="reverse-camera" size="large"></ion-icon>
-  </ion-button>
-  <ion-button [routerLink]="[ '/talk' ]">
-    <ion-icon name="chatbubbles" size="large"></ion-icon>
-  </ion-button>
-</ion-item>
-
-<ion-item lines="none" class="text-item">
-  <ion-note class="text-note">Top Participant</ion-note>
-  <ion-note class="text-note-second">Wei Guo</ion-note>
-  <ion-note class="text-note">Top Tag</ion-note>
-  <ion-note class="text-note">Include</ion-note>
-</ion-item>
-
 <ion-content>
+  <ion-item lines="full">
+    <a [routerLink]="[ '/safetyinspector' ]">Makeatbon Team: Evil Queen</a>
+    <ion-button (click)="filterClick()">
+      <ion-icon class="icon-funnel" name="funnel"></ion-icon>
+      <ion-note class="icon-note">FILTER</ion-note>
+    </ion-button>
+    <ion-button (click)="sortClick()">
+      <ion-icon class="icon-arrow-round-up" name="arrow-round-up"></ion-icon>
+      <ion-icon class="icon-arrow-round-down" name="arrow-round-down"></ion-icon>
+      <ion-note class="icon-note">DATE</ion-note>
+    </ion-button>
+  </ion-item>
+
+  <ion-item class="item-button" lines="none">
+    <ion-button [routerLink]="[ '/capture' ]">
+      <ion-icon name="reverse-camera" size="large"></ion-icon>
+    </ion-button>
+    <ion-button [routerLink]="[ '/talk' ]">
+      <ion-icon name="chatbubbles" size="large"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-item lines="none" class="text-item">
+    <ion-note class="text-note">Top Participant</ion-note>
+    <ion-note class="text-note-second">Wei Guo</ion-note>
+    <ion-note class="text-note">Top Tag</ion-note>
+    <ion-note class="text-note">Include</ion-note>
+  </ion-item>
+
   <ion-item *ngFor="let overview of overviewPageData">
     <ion-grid>
       <ion-row>

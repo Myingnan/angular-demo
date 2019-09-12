@@ -69,10 +69,13 @@ ion-button {
     --background:#f4f5f8;
     font-size: 12px;
 }
+
 .text-note {
-      --color:black;
-      flex-grow: 1;
+    --color: #8d93ab;
+    flex-grow: 1;
+    margin-left: 6px;
 }
+
 .text-note-second {
     --color:#fd687d;
     flex-grow: 1;
@@ -81,7 +84,7 @@ ion-button {
 .bg-rgba {
     --background: rgba(0, 0, 0, 0); 
     --background-activated: rgba(0, 0, 0, 0); 
-    --color:black;
+    --color: #8d93ab;
     flex-grow: 1;
     font-size: 12px;
 }
